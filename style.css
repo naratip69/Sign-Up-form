@@ -70,7 +70,7 @@ body{
 .form-row input[type="text"]:invalid,
 .form-row input[type="email"]:invalid,
 .form-row input[type="tel"]:invalid,
-.form-row input[type="password"]{
+.form-row input[type="password"]:invalid{
     border: 2px solid red;
 }
 
