@@ -20,7 +20,7 @@ body{
     text-align: center;
     background-color: rgba(255, 255, 255, 0.123);
     border-radius: 3px;
-    width: 80%;
+    width: 800px;
     padding: 23px;
 }
 
@@ -32,7 +32,30 @@ body{
 .sign-up-form{
     background-color: rgba(255, 255, 255, 0.123);
     border-radius: 3px;
-    width: 80%;
+    width: 800px;
     padding: 23px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
 }
+
+.form-row{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.form-row input[type="text"]{
+    width: 230px;
+    height: 23px;
+    background-color: rgba(255, 255, 255, .69);
+    border: 0;
+    border-radius: 3px;
+}
+
+.form-row label{
+    text-align: right;
+    font-weight: 600;
+}
+
