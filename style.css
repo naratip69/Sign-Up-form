@@ -28,3 +28,11 @@ body{
     font-size: 30px;
     margin-bottom: 18px;
 }
+
+.sign-up-form{
+    background-color: rgba(255, 255, 255, 0.123);
+    border-radius: 3px;
+    width: 80%;
+    padding: 23px;
+    margin: 0 auto;
+}
