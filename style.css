@@ -36,26 +36,37 @@ body{
     padding: 23px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .form-row{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    width: 400px;
 }
 
-.form-row input[type="text"]{
-    width: 230px;
+.form-row input[type="text"],
+.form-row input[type="email"]{
+    width: 280px;
     height: 23px;
     background-color: rgba(255, 255, 255, .69);
     border: 0;
     border-radius: 3px;
+    padding: 8px;
 }
 
 .form-row label{
     text-align: right;
     font-weight: 600;
+    align-self: center;
+}
+
+.form-row input[type="text"]:invalid,
+.form-row input[type="email"]:invalid{
+    border: 2px solid red;
 }
 
