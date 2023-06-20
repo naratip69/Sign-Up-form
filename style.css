@@ -41,7 +41,7 @@ body{
     align-items: flex-start;
 }
 
-.form-row{
+.form-row,.pass-row{
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
@@ -52,7 +52,7 @@ body{
 .form-row input[type="text"],
 .form-row input[type="email"],
 .form-row input[type="tel"],
-.form-row input[type="password"]{
+.pass-row input[type="password"]{
     width: 280px;
     height: 23px;
     background-color: rgba(255, 255, 255, .69);
@@ -61,7 +61,8 @@ body{
     padding: 8px;
 }
 
-.form-row label{
+.form-row label,
+.pass-row label{
     text-align: right;
     font-weight: 600;
     margin: 0 auto;
@@ -70,7 +71,20 @@ body{
 .form-row input[type="text"]:invalid,
 .form-row input[type="email"]:invalid,
 .form-row input[type="tel"]:invalid,
-.form-row input[type="password"]:invalid{
+.pass-row input[type="password"]:invalid{
     border: 2px solid red;
+}
+
+.pass-row{
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.pass-row output{
+    color: crimson;
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 10px;
+    padding-left: 170px;
 }
 
