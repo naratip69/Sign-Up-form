@@ -13,6 +13,8 @@ function checkPass(e){
 function confirm(e){
     const out = document.querySelector(`output[for="confirm-pass"]`);
     const nowPass = document.querySelector("#pass");
+    // console.log(nowPass.value);
+    // console.log(e.target.value);
     if(nowPass.value !== e.target.value){
         out.textContent = "Password not match";
         confirmPass.setAttribute("isvalid","false");
@@ -22,5 +24,5 @@ function confirm(e){
     }
 }
 
-pass.addEventListener("change",checkPass);
-confirmPass.addEventListener("change",confirm);
+pass.addEventListener("input",checkPass);
+confirmPass.addEventListener("input",confirm);
