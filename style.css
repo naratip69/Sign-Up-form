@@ -88,3 +88,23 @@ body{
     padding-left: 170px;
 }
 
+.form-row button{
+    font-size: 16px;
+    font-weight: 700;
+    width: 120px;
+    height: 40px;
+    border-radius: 3px;
+    border: 0;
+    color: antiquewhite;
+    background-color: rgba(141, 139, 139, 0.8);
+    margin-left: 340px;
+}
+
+.form-row button:hover{
+    background-color: rgba(39, 39, 39, 0.9);
+}
+
+.form-row button:active{
+    background-color: rgba(5, 5, 5, 1);
+}
+
