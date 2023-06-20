@@ -97,14 +97,25 @@ body{
     color: antiquewhite;
     background-color: rgba(141, 139, 139, 0.8);
     margin-left: 340px;
+    margin-bottom: 10px;
 }
 
 .form-row button:hover{
     background-color: rgba(39, 39, 39, 0.9);
+    cursor: pointer;
 }
 
 .form-row button:active{
     background-color: rgba(5, 5, 5, 1);
+
+}
+
+.form-row p{
+    margin-left: 140px;
+}
+
+.form-row:nth-last-child(2){
+    margin-bottom: 5px;
 }
 
 a{
@@ -123,6 +134,7 @@ a:visited{
     color: rgb(255, 255, 255);
     font-weight: 700;
 }
+
 footer{
     display: flex;
     width: 800px;
